@@ -1,2 +1,0 @@
-# tinyurl
-System Design TinyURL
