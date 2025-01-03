@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package shortener;
+
+option go_package = "github.com/wandhie08/tinyurl/proto/shortener;shortener";
+
+service URLShortener {
+  rpc Create(URLRequest) returns (URLResponse) {}
+}
+
+message URLRequest {
+  string long_url = 1;
+}
+
+message URLResponse {
+  string short_url = 1;
+}
